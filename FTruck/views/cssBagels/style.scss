@@ -1,0 +1,260 @@
+@import "../css/vars";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  behavior: "smooth";
+}
+
+body {
+  font-family: $font-base;
+}
+
+#scrolling1 {
+  text-align: center;
+  .element0 {
+    position: fixed;
+    top: 210px;
+    right: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #e06756;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(2);
+    }
+    &:hover::before {
+      content: "Accueil";
+      position: fixed;
+      top: 0;
+      left: -47px;
+    }
+  }
+  .element1 {
+    position: fixed;
+    top: 240px;
+    right: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #e06756;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(2);
+    }
+    &:hover::before {
+      content: "Chrono";
+      position: fixed;
+      top: 0;
+      left: -47px;
+    }
+  }
+  .element2 {
+    position: fixed;
+    top: 270px;
+    right: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #e06756;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(2);
+    }
+    &:hover::before {
+      content: "Boeuf";
+      position: fixed;
+      top: 0;
+      left: -37px;
+    }
+  }
+  .element3 {
+    position: fixed;
+    top: 300px;
+    right: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #e06756;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(2);
+    }
+    &:hover::before {
+      content: "Chèvre";
+      position: fixed;
+      top: 0;
+      left: -45px;
+    }
+  }
+  .element4 {
+    position: fixed;
+    top: 330px;
+    right: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #e06756;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(2);
+    }
+    &:hover::before {
+      content: "Poulet";
+      position: fixed;
+      top: 0;
+      left: -40px;
+    }
+  }
+  .element5 {
+    position: fixed;
+    top: 360px;
+    right: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #e06756;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(2);
+    }
+    &:hover::before {
+      content: "Saumon";
+      position: fixed;
+      top: 0;
+      left: -50px;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+    .trois-vertical1 {
+      width: 3px;
+      height: 30px;
+      background-color: #2e3131;
+      align-self: flex-end;
+    }
+    .trois-vertical2 {
+      width: 3px;
+      height: 30px;
+      background-color: #2e3131;
+      align-self: flex-end;
+    }
+    .croustillant {
+      h2 {
+        font-size: 2rem;
+        margin-top: 50px;
+      }
+    }
+    .gourmand {
+      display: flex;
+      h2 {
+        font-size: 2rem;
+        margin-top: 50px;
+        color: #e06756;
+      }
+    }
+    .delicieux {
+      display: flex;
+      h2 {
+        font-size: 2rem;
+        margin-top: 50px;
+        color: #9bcea4;
+      }
+    }
+  }
+
+  img {
+    margin-top: 50px;
+    width: 80%;
+  }
+
+  .counter {
+    .data {
+      margin: 50px auto 20px auto;
+      width: 60%;
+      background-color: #2e3131;
+      color: #f1f1f1;
+      padding: 10px 20px;
+      border-radius: 15px;
+      font-size: 2em;
+    }
+  }
+
+  .text {
+    font-weight: 600;
+    margin-top: 50px;
+  }
+  .footer {
+    width: 100%;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #scrolling1 {
+    .container {
+      .croustillant,
+      .gourmand,
+      .delicieux {
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+#scrolling2 {
+  .beef {
+    width: 100%;
+    height: 840px;
+    background-image: url("../img/boeuf.gif");
+    background-position: center;
+    background-size: cover;
+  }
+}
+#scrolling3 {
+  .goat {
+    width: 100%;
+    height: 840px;
+    background-image: url("../img/chevre.gif");
+    background-position: center;
+    background-size: cover;
+  }
+}
+#scrolling4 {
+  .chicken {
+    width: 100%;
+    height: 840px;
+    background-image: url("../img/poulet.gif");
+    background-position: center;
+    background-size: cover;
+  }
+}
+#scrolling5 {
+  width: 100%;
+  height: 840px;
+  background-image: url("../img/saumon.gif");
+  background-position: center;
+  background-size: cover;
+}

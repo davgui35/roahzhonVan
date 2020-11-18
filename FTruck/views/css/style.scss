@@ -1,0 +1,237 @@
+@import "./vars";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: #f1f1f1;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider img {
+  max-width: 100%;
+  display: none;
+}
+
+img.active-img {
+  display: block;
+  animation: fade 4s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#navigation {
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  li {
+    display: inline-block;
+    margin: 20px;
+    font-size: 1.6em;
+    font-family: $font-base;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-text;
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $color-text;
+    }
+  }
+}
+
+.copy {
+  position: absolute;
+  top: 90%;
+  left: 66px;
+}
+
+.logo {
+  position: absolute;
+  z-index: 4;
+  top: 5%;
+  left: 5%;
+  width: 7rem;
+}
+
+.btn-discover {
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    50%,
+    rgb(253, 116, 108) 50%,
+    rgb(255, 144, 104)
+  );
+  border-radius: 9999px;
+  background-position: 100%;
+  background-size: 200%;
+  cursor: pointer;
+  // transition: all 0.4s ease-in-out;
+
+  &:hover {
+    outline: none;
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      50%,
+      rgb(152, 214, 118) 50%,
+      rgb(153, 242, 200)
+    );
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #navigation {
+    top: 75%;
+  }
+  .copy {
+    top: 85%;
+  }
+
+  .logo {
+    width: 6rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #navigation {
+    top: 55%;
+    left: 66px;
+
+    li {
+      font-size: 1.2rem;
+    }
+  }
+  .copy {
+    top: 75%;
+    margin-left: -30px;
+  }
+
+  .logo {
+    width: 4rem;
+  }
+}
+@media screen and (max-width: 680px) {
+  #navigation {
+    left: 16px;
+
+    li {
+      font-size: 1.2rem;
+    }
+  }
+  .copy {
+    top: 75%;
+    margin-left: -30px;
+  }
+
+  .logo {
+    width: 4rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  #navigation {
+    top: 45%;
+    left: 200px;
+    text-align: center;
+
+    li {
+      display: block;
+      font-size: 1.2rem;
+    }
+  }
+  .copy {
+    top: 85%;
+    margin-left: -30px;
+  }
+
+  .logo {
+    width: 4rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  #slider {
+    margin-top: 100px;
+  }
+
+  #navigation {
+    top: 45%;
+    left: 150px;
+    text-align: center;
+
+    li {
+      display: block;
+      font-size: 1rem;
+    }
+  }
+  .copy {
+    top: 95%;
+    margin-left: -30px;
+  }
+
+  .logo {
+    width: 4rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  #navigation {
+    left: -100px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #navigation {
+    top: 45%;
+    left: 25%;
+    text-align: center;
+  }
+}
+.active {
+  border-bottom: 5px solid $ligne-navbar;
+}

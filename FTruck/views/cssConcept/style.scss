@@ -1,0 +1,195 @@
+@import "../css/vars";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  $font-family: $font-base;
+  height: 100vh;
+}
+
+#scrolling1 {
+  background-image: url("../img/concept1.jpg");
+  background-position: center;
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  .element0 {
+    position: fixed;
+    top: 210px;
+    right: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #e06756;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(2);
+    }
+    &:hover::before {
+      content: "Accueil";
+      position: fixed;
+      top: 0;
+      left: -47px;
+    }
+  }
+  .element1 {
+    position: fixed;
+    top: 240px;
+    right: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #e06756;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(2);
+    }
+    &:hover::before {
+      content: "Concept";
+      position: fixed;
+      top: 0;
+      left: -52px;
+    }
+  }
+  .element2 {
+    position: fixed;
+    top: 270px;
+    right: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #e06756;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(2);
+    }
+    &:hover::before {
+      content: "Histoire";
+      position: fixed;
+      top: 0;
+      left: -47px;
+    }
+  }
+  .element3 {
+    position: fixed;
+    top: 300px;
+    right: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #e06756;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(2);
+    }
+    &:hover::before {
+      content: "Locaux";
+      position: fixed;
+      top: 0;
+      left: -47px;
+    }
+  }
+  header {
+    h1 {
+      font-size: 3rem;
+      margin-left: 45px;
+      padding: 30px 35px 40px;
+      font-family: $font-title;
+      font-weight: 100px;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        background-color: $btn-discover;
+        width: 4px;
+        height: 40px;
+        margin-right: 20px;
+      }
+    }
+  }
+  main {
+    article {
+      max-width: 50%;
+    }
+    .para {
+      padding: 35px 40px;
+      font-size: 1.6rem;
+      text-align: left;
+    }
+  }
+
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 35px;
+
+    .ecolo {
+      text-align: center;
+      img {
+        width: 100px;
+      }
+      p {
+        padding: 35px 40px;
+        font-size: 1.6rem;
+      }
+    }
+    .home {
+      margin-top: -30px;
+      text-align: center;
+      img {
+        width: 100px;
+      }
+      p {
+        padding: 25px 40px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+#scrolling2 {
+  h1 {
+    font-size: 3rem;
+    margin-left: 45px;
+    padding: 30px 35px 40px;
+    font-family: $font-title;
+    font-weight: 100px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      background-color: $btn-discover;
+      width: 4px;
+      height: 40px;
+      margin-right: 20px;
+    }
+  }
+  width: 100%;
+  height: 840px;
+  background-image: url("../img/histoire.gif");
+  background-position: center;
+  background-size: cover;
+
+  p {
+    max-width: 1450px;
+    padding: 50px 40px;
+    font-size: 1.6rem;
+    text-align: left;
+  }
+}

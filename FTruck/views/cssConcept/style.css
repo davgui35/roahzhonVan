@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap");
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+#scrolling1 {
+  background-image: url("../img/concept1.jpg");
+  background-position: center;
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+}
+
+#scrolling1 .element0 {
+  position: fixed;
+  top: 210px;
+  right: 20px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #e06756;
+}
+
+#scrolling1 .element0:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+#scrolling1 .element0:hover::before {
+  content: "Accueil";
+  position: fixed;
+  top: 0;
+  left: -47px;
+}
+
+#scrolling1 .element1 {
+  position: fixed;
+  top: 240px;
+  right: 20px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #e06756;
+}
+
+#scrolling1 .element1:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+#scrolling1 .element1:hover::before {
+  content: "Concept";
+  position: fixed;
+  top: 0;
+  left: -52px;
+}
+
+#scrolling1 .element2 {
+  position: fixed;
+  top: 270px;
+  right: 20px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #e06756;
+}
+
+#scrolling1 .element2:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+#scrolling1 .element2:hover::before {
+  content: "Histoire";
+  position: fixed;
+  top: 0;
+  left: -47px;
+}
+
+#scrolling1 .element3 {
+  position: fixed;
+  top: 300px;
+  right: 20px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #e06756;
+}
+
+#scrolling1 .element3:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+#scrolling1 .element3:hover::before {
+  content: "Locaux";
+  position: fixed;
+  top: 0;
+  left: -47px;
+}
+
+#scrolling1 header h1 {
+  font-size: 3rem;
+  margin-left: 45px;
+  padding: 30px 35px 40px;
+  font-family: "Sansita Swashed", cursive;
+  font-weight: 100px;
+}
+
+#scrolling1 header h1::before {
+  content: "";
+  display: inline-block;
+  background-color: #e06756;
+  width: 4px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+#scrolling1 main article {
+  max-width: 50%;
+}
+
+#scrolling1 main .para {
+  padding: 35px 40px;
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+#scrolling1 .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 0px 0px 35px;
+}
+
+#scrolling1 .logos .ecolo {
+  text-align: center;
+}
+
+#scrolling1 .logos .ecolo img {
+  width: 100px;
+}
+
+#scrolling1 .logos .ecolo p {
+  padding: 35px 40px;
+  font-size: 1.6rem;
+}
+
+#scrolling1 .logos .home {
+  margin-top: -30px;
+  text-align: center;
+}
+
+#scrolling1 .logos .home img {
+  width: 100px;
+}
+
+#scrolling1 .logos .home p {
+  padding: 25px 40px;
+  font-size: 1.6rem;
+}
+
+#scrolling2 {
+  width: 100%;
+  height: 840px;
+  background-image: url("../img/histoire.gif");
+  background-position: center;
+  background-size: cover;
+}
+
+#scrolling2 h1 {
+  font-size: 3rem;
+  margin-left: 45px;
+  padding: 30px 35px 40px;
+  font-family: "Sansita Swashed", cursive;
+  font-weight: 100px;
+}
+
+#scrolling2 h1::before {
+  content: "";
+  display: inline-block;
+  background-color: #e06756;
+  width: 4px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+#scrolling2 p {
+  max-width: 1450px;
+  padding: 50px 40px;
+  font-size: 1.6rem;
+  text-align: left;
+}
+/*# sourceMappingURL=style.css.map */
